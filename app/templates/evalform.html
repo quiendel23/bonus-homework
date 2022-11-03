@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+<style>
+    *{
+        background-color: lavender;
+    }
+</style>
+    <h2> Peer Evaluation</h2>
+    <form action = "" method = "post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.user_id.label }}<br>
+            {{ form.user_id(size=32) }}
+        </p>
+        <p>
+            {{ form.fname.label }}<br>
+            {{ form.fname(size=32) }}
+        </p>
+        <p>
+            {{ form.lname.label }}<br>
+            {{ form.lname(size=32) }}
+        </p>
+       <h3>Indicate your agreement or disagreement on the following quesitons</h3> 
+       <h4>Participation Question 1</h4>
+       <input type = "radio" id = "1" name = "participation" value = "1">Strongly Disagree<br>
+       <input type = "radio" id = "2" name = "participation" value = "2">Disagree<br>
+       <input type = "radio" id = "3" name = "participation" value = "3">Neutral<br>
+       <input type = "radio" id = "4" name = "participation" value = "4">Agree<br>
+       <input type = "radio" id = "5" name = "participation" value = "5">Strongly Agree<br>
+
+       <h4>Participation Question 2</h4>
+       <input type = "radio" id = "1" name = "participation" value = "1">Strongly Disagree<br>
+       <input type = "radio" id = "2" name = "participation" value = "2">Disagree<br>
+       <input type = "radio" id = "3" name = "participation" value = "3">Neutral<br>
+       <input type = "radio" id = "4" name = "participation" value = "4">Agree<br>
+       <input type = "radio" id = "5" name = "participation" value = "5">Strongly Agree<br>
+
+       <h4>Communicaiton Question 1</h4>
+       <input type = "radio" id = "1" name = "communication" value = "1">Strongly Disagree<br>
+       <input type = "radio" id = "2" name = "communication" value = "2">Disagree<br>
+       <input type = "radio" id = "3" name = "communication" value = "3">Neutral<br>
+       <input type = "radio" id = "4" name = "communication" value = "4">Agree<br>
+       <input type = "radio" id = "5" name = "communication" value = "5">Strongly Agree<br>
+       
+       <h4>Communicaiton Question 2</h4>
+       <input type = "radio" id = "1" name = "communication" value = "1">Strongly Disagree<br>
+       <input type = "radio" id = "2" name = "communication" value = "2">Disagree<br>
+       <input type = "radio" id = "3" name = "communication" value = "3">Neutral<br>
+       <input type = "radio" id = "4" name = "communication" value = "4">Agree<br>
+       <input type = "radio" id = "5" name = "communication" value = "5">Strongly Agree<br>
+       
+       <h4>Quality of Work Question 2</h4>
+       <input type = "radio" id = "1" name = "qwork" value = "1">Strongly Disagree<br>
+       <input type = "radio" id = "2" name = "qwork" value = "2">Disagree<br>
+       <input type = "radio" id = "3" name = "qwork" value = "3">Neutral<br>
+       <input type = "radio" id = "4" name = "qwork" value = "4">Agree<br>
+       <input type = "radio" id = "5" name = "qwork" value = "5">Strongly Agree<br>
+
+       <h4>Quality of Work Question 2</h4>
+       <input type = "radio" id = "1" name = "qwork" value = "1">Strongly Disagree<br>
+       <input type = "radio" id = "2" name = "qwork" value = "2">Disagree<br>
+       <input type = "radio" id = "3" name = "qwork" value = "3">Neutral<br>
+       <input type = "radio" id = "4" name = "qwork" value = "4">Agree<br>
+       <input type = "radio" id = "5" name = "qwork" value = "5">Strongly Agree<br>
+
+       <h4>Attitude Question 1</h4>
+       <input type = "radio" id = "1" name = "attitude" value = "1">Strongly Disagree<br>
+       <input type = "radio" id = "2" name = "attitude" value = "2">Disagree<br>
+       <input type = "radio" id = "3" name = "attitude" value = "3">Neutral<br>
+       <input type = "radio" id = "4" name = "attitude" value = "4">Agree<br>
+       <input type = "radio" id = "5" name = "attitude" value = "5">Strongly Agree<br>
+
+       <h4>Attitude Question 2</h4>
+       <input type = "radio" id = "1" name = "attitude" value = "1">Strongly Disagree<br>
+       <input type = "radio" id = "2" name = "attitude" value = "2">Disagree<br>
+       <input type = "radio" id = "3" name = "attitude" value = "3">Neutral<br>
+       <input type = "radio" id = "4" name = "attitude" value = "4">Agree<br>
+       <input type = "radio" id = "5" name = "attitude" value = "5">Strongly Agree<br>
+    
+        <h4>Please add any additional comments </h4>
+        <textarea name = "comments" id = "comments" cols = "50" rows = "10">
+        
+        </textarea>
+    </form>
+</html>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+      <style>
+        * {
+          font-family: "Open Sans", serif;
+        }
+        h1 {
+          text-align: center;
+        }
+        div {
+          text-align: center;
+        }
+        div a {
+          padding-left: 2.5px;
+          padding-right: 2.5px;
+        }
+
+
+      </style>
+
+
+      <title>CSC 330 Semester Project</title>
+    </head>
+
+    <body>
+        <h1 style=color:black>Group Performance Application</h1>
+        <hr>
+          <div>
+            <a href="/">Login</a>
+            <a href="/logout">Logout</a>
+            <a href="/admin-home">Admin Page</a>
+            <a href="/student-home">Student Page</a>
+            <a href="/add">Add user to DB</a>
+            <a href="/delete">Delete user from DB</a>
+            <a href = "/evalform">Evaluation Form</a>
+          </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

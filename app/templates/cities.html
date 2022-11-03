@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cities Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Quiendel Thompson">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+
+</head>
+
+<body>
+<div class="container">
+  <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p class="form">
+        {{ form.min_population.label }}<br>
+        {{ form.min_population(size=32) }}
+    </p>
+    <p class="form">
+        {{ form.max_population.label }}<br>
+        {{ form.max_population(size=32) }}
+    </p>
+    <p class="button">{{ form.submit() }}</p>
+</form>
+</div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+</html>

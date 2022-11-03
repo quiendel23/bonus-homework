@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>    
+    <head>
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+        <style>
+
+            * {
+                background-color:lavender;
+                font-family: "Open Sans", serif;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 16pt;
+                margin-top: 60px;
+            }
+
+            .wrapper {
+                border: 2px solid rgb(190, 190, 255);
+                margin-top: 5%;
+                width: 40%;
+                height: 40%;
+                border-radius: 4px;
+                position: relative;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%, -10%);
+                min-width: 320px;
+            }
+
+            form {
+                position: relative;
+                top: 4%;
+                bottom: 4%;
+            }
+
+            form #submit {
+                margin-top: 20px;
+                background-color: rgb(190, 190, 255);
+                height: 30px;
+                width: 180px;
+                font-size: 12pt;
+                font-weight: 600;
+            }
+
+            form #submit:hover {
+                background-color: lavender;
+                cursor: pointer;
+            }
+
+            form, form p, .wrapper, form .form label {
+                background-color: white;
+            }
+
+            form .form input {
+                background-color: white;
+                height: 30px;
+                width: 280px;
+            }
+
+            form .form label {
+                font-size: 12pt;
+                font-weight: 600;
+                padding-right: 5px;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+
+        <h2>Log in to your account</h2>
+
+        <div class="wrapper">
+            <form action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
+                <p class="form">
+                    {{ form.username.label }}<br>
+                    {{ form.username(size=32) }}
+                </p>
+                <p class="form">
+                    {{ form.password.label }}<br>
+                    {{ form.password(size=32) }}
+                </p>
+                <p class="button">{{ form.submit() }}</p>
+            </form>
+        </div>
+
+    </body>    
+</html>    
+{% endblock %}

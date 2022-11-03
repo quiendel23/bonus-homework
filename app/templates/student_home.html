@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+    <head>
+
+        <style>
+            * {
+                background-color: lavender;
+            }
+
+            .wrapper {
+                margin: 40px 100px 0px;
+                overflow: auto;
+                border: 1px solid black;
+            }
+
+            .evals, .stats {
+                text-decoration: none;
+                color: black;
+                width: 200px;
+            }
+
+            .evals {
+                border: 2px solid red;
+                float: left;
+            }
+
+            .stats {
+                display: block;
+                border: 2px solid blue;
+                float: right;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h2 class="title">Student Page</h2>
+
+        <div class="wrapper">
+            <div class="evals">
+                <h2>To-Do Evaluations</h2>
+            </div>
+
+            <a href="/" class="stats">
+                <h2>Personal Stats</h2>
+            </a>
+
+        </div>
+    
+    </body>
+</html>
+{% endblock %}
